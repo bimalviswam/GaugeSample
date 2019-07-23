@@ -6,7 +6,8 @@
     "test": "gauge run specs/"
   },
   "dependencies": {
-    "@getgauge/cli": "^1.0.4",
+    "@getgauge/cli": "^1.0.5",
+    "selenium-webdriver": "^4.0.0-alpha.3",
     "taiko": "^0.5.0"
   }
 }

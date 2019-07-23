@@ -1,5 +1,16 @@
+let count = 0; 
+let webDriver = require("selenium-webdriver");
+let By = webDriver.By;
+let Key = webDriver.Key;
+let utils = require("./CommonUtils")
 
 
-beforeSuite( function(){
-    console.log("=====================create suite in testRail ================================");
-      });
+beforeScenario(async ()=>{
+  await utils.openBrowser(); 
+});
+
+afterScenario(async () => {
+  
+  await utils.closeBrowser(); 
+  
+  });
